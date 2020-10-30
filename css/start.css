@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/*  navbar */
+nav {
+    width: 100%;
+    background-color: black;
+
+}
+
+.navbar-brand img {
+    width: 60px;
+}
+
+.navbar-brand span {
+    font-size: 26px;
+}
+
+nav .navbar-text {
+    color: white;
+    font-size: 20px;
+    z-index: 2;
+}
+
+nav a {
+    color: white !important;
+}
+
+nav a:hover {
+    color: red !important;
+}
+
+.fa-bars {
+    color: white;
+    font-size: 30px !important;
+
+}
+
+nav .dropdown-menu a {
+    background-color: black;
+    margin: 0;
+}
+
+
+nav .dropdown-menu a:hover {
+    background-color: black;
+    color: red;
+}
+
+
+
+
+/*------------course - section ---------------  */
+#course {
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+#course button {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: larger;
+    padding: 10px 20px;
+    background-color: black;
+    color: whitesmoke;
+    border: none;
+    transition: all .4s linear;
+
+}
+
+#course button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#courselist .row {
+    padding-top: 60px;
+    height: auto;
+    background-color: #efefef;
+    padding-bottom: 40px;
+}
+
+#courselist .row .box {
+    margin: 10px 20px;
+    height: 200px;
+    max-width: 350px;
+    border: 1px solid black;
+    box-shadow: 10px 10px 5px 3px rgba(166, 166, 166, 1);
+}
+
+#courselist .row .box .p {
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+#courselist .row .box img {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+}
+
+#blog-area {
+    background-color: #efefef;
+    width: 100%;
+}
+
+#blog-area .row {
+    padding-top: 60px;
+    height: auto;
+    padding-bottom: 40px;
+}
+
+#blog-area .row .box {
+    margin: 10px 20px;
+    height: 200px;
+    max-width: 350px;
+    border: 1px solid black;
+    box-shadow: 10px 10px 5px 3px rgba(166, 166, 166, 1);
+}
+
+#blog-area .row .box .p {
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+#blog-area .row .box img {
+    width: 60px !important;
+    position: absolute;
+    top: -20px;
+    left: 30%;
+    background-color: white;
+    border-radius: 50%;
+}
+
+
+/* footer  */
+
+
+#footer {
+    margin-top: -15px;
+    width: 100%;
+    height: auto;
+    padding: 30px 20px;
+    background-color: black;
+}
+
+#footer .left {
+    margin-top: 40px;
+}
+
+#footer .left img {
+    width: 200px;
+    margin-bottom: 0px !important;
+}
+
+
+
+#footer .left ul li {
+    margin-top: -10px;
+    display: inline-flex;
+    padding: 10px 5px;
+    color: white !important;
+}
+
+
+#footer .center {
+    margin-top: 10px;
+}
+
+#footer .center p {
+    margin: 5px auto;
+    color: white;
+    transition: all .2s linear;
+}
+
+#footer .center p:hover {
+    color: red;
+    cursor: pointer;
+}
+
+#footer .right {
+    margin-top: 40px;
+}
+
+#footer .right address a {
+    color: white;
+}
+
+#footer .right address:hover a {
+    text-decoration: none;
+    color: red;
+}
+
+
+/* project details */
+
+.project {
+    background-color: black;
+    color: white;
+    height: auto;
+    width: 100%;
+    margin-top: 3px;
+    padding: 5px 0 0;
+    font-size: 18px;
+}
+
+.project:hover p {
+    color: red;
+}
+
+
+@media screen and (max-width:703px) {
+    #courselist .row {
+        display: flex;
+    }
+
+    #courselist .row .box {
+        margin: 30px auto;
+    }
+
+    #courselist .row .box img {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+    }
+
+    #blog-area .row {
+        display: flex;
+    }
+
+    #blog-area .row .box {
+        margin-top: 40px;
+    }
+
+    #blog-area .row .box img {
+        width: 70px;
+        position: absolute;
+        top: 10px;
+        left: 40%;
+        background-color: white;
+        border-radius: 50%;
+    }
+}

@@ -1,0 +1,468 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: sticky;
+    background-color: black;
+}
+
+header nav a {
+    color: white !important;
+    font-weight: 600;
+}
+
+header nav a:hover {
+    color: red !important;
+    font-weight: 800;
+}
+
+header .fa-bars {
+    color: white;
+    font-size: 30px !important;
+
+}
+
+header nav .dropdown-menu a {
+    background-color: black;
+    margin: 0;
+}
+
+
+header nav .dropdown-menu a:hover {
+    background-color: black;
+    color: red;
+}
+
+/* slider */
+#mainslider {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    z-index: -1;
+}
+
+#mainslider .carousel-inner .left {
+    margin-top: 80px;
+}
+
+#mainslider .carousel-inner .left button {
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    padding: 3px 20px;
+}
+
+
+#mainslider .carousel-inner .left button:hover {
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+}
+
+#mainslider .row img {
+    margin-top: -30px;
+}
+
+#mainslider .row .img1 {
+    width: 100%;
+}
+
+
+#mainslider .row .img2 {
+    width: 90%;
+}
+
+/* course */
+
+
+
+#course {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+#course button {
+    margin-top: -25px;
+    padding: 5px 25px;
+    font-weight: 600;
+    font-size: 40px;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    transition: all .2s linear;
+}
+
+#course a:hover button {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    transform: translateY(-10px);
+
+}
+
+#course .cousre-slick-slider {
+    display: flex;
+}
+
+#course .cousre-slick-slider .items {
+    width: 300px;
+    height: auto;
+    margin: 30px 50px 20px 50px;
+    border-radius: 100px;
+}
+
+#course .cousre-slick-slider .items p {
+    font-size: 22px;
+    font-size: 800;
+    align-items: center;
+    width: 100%;
+    transition: all .4s linear;
+    color: black;
+
+}
+
+#course .cousre-slick-slider .items p .color {
+    color: red;
+}
+
+#course .cousre-slick-slider .items p:hover .color {
+    color: red;
+    width: 100%;
+}
+
+#course .cousre-slick-slider .items p:hover {
+    color: white;
+    background-color: black;
+    width: 300px;
+}
+
+#course .cousre-slick-slider .items .imagehoverzoom {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+}
+
+#course .cousre-slick-slider .items .imagehoverzoom img {
+    width: 300px;
+    height: 200px;
+    transition: all .3s linear;
+}
+
+#course .cousre-slick-slider .items .imagehoverzoom:hover img {
+    transform: scale(1.2);
+}
+
+
+/* blog */
+
+#blog {
+    width: 100%;
+    height: auto;
+    padding: 40px 0;
+    background-color: #efefef !important;
+}
+
+#blog h2 {
+    margin: 10px 40px;
+}
+
+#blog p {
+    margin: 10px 40px;
+}
+
+/* why */
+
+#why {
+    width: 100%;
+    height: auto;
+}
+
+#why button {
+    margin-top: -25px;
+    padding: 5px 25px;
+    font-weight: 600;
+    font-size: 40px;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    transition: all .2s linear;
+}
+
+#why a:hover button {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    transform: translateY(-10px);
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.service-box {
+    border: 3px solid #efefef;
+    flex: 0 0 32%;
+    max-width: 370px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    transition: all .4s linear;
+    margin: 20px 0;
+}
+
+.service-box:hover {
+    box-shadow: 10px 10px 5px 0px rgba(173, 170, 173, .5);
+    background-color: white;
+    color: black;
+    transform: scale(.9);
+}
+
+.service-box:hover .service-title {
+    background-color: black;
+    color: white;
+}
+
+.service-box img {
+    width: 100%;
+}
+
+.service-title {
+    font-size: 28px;
+    font-weight: 600;
+    background-color: red;
+    color: white;
+}
+
+
+.call-to-action {
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+.call-to-action a {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    padding: 8px;
+}
+
+
+
+
+/* start */
+#start {
+    width: 100%;
+    background-image: linear-gradient(to right, #1d1b1b, #000);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+
+
+#start p {
+    margin-top: 30px;
+    padding: 30px 20px;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}
+
+#start p .color {
+    background-color: red;
+}
+
+
+#start .btn {
+    background-color: red;
+    padding: 8px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-left: 50px;
+}
+
+#start .btn:hover {
+    background-color: white;
+    border: 1px solid red;
+    color: red;
+}
+
+footer {
+    margin-top: -17px !important;
+}
+
+footer .row {
+    padding: 30px 0;
+}
+
+footer .row a {
+    padding: 0 6px;
+    color: white;
+    text-decoration: none;
+}
+
+footer .row a:hover {
+    color: red;
+}
+
+footer .row a i:hover {
+    color: red;
+}
+
+/* footer  */
+
+
+
+
+
+/* media queries */
+
+@media screen and (max-width: 994px) {
+    #mainslider .row img {
+        margin-top: 50px;
+    }
+
+    #course .cousre-slick-slider {
+        display: flex;
+    }
+
+    #course .cousre-slick-slider .items {
+        width: 200px;
+        height: auto;
+        margin: 30px 50px 20px 50px;
+        border-radius: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #course .cousre-slick-slider .items p {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    #course .cousre-slick-slider .items .imagehoverzoom {
+        width: 200px;
+        height: 150px;
+        overflow: hidden;
+    }
+
+    #course .cousre-slick-slider .items .imagehoverzoom img {
+        width: 200px;
+        height: 150px;
+    }
+}
+
+
+@media screen and (max-width: 582px) {
+    #course .cousre-slick-slider .items {
+        width: 100%;
+        height: auto;
+        margin: 30px 50px 20px 50px;
+        border-radius: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #course .cousre-slick-slider .items p {
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0 auto;
+        padding-left: 75px;
+    }
+
+    #course .cousre-slick-slider .items .imagehoverzoom {
+        width: 100%;
+        height: 150px;
+        overflow: hidden;
+    }
+
+    #course .cousre-slick-slider .items .imagehoverzoom img {
+        width: 100%;
+        height: 150px;
+    }
+}
+
+
+@media screen and (max-width:778px) {
+    .service-box {
+        border: 3px solid #efefef;
+        flex: 0 0 46%;
+        max-width: 370px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        border-radius: 30px;
+        transition: all .4s linear;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .service-box:hover {
+        box-shadow: 10px 10px 5px 0px rgba(173, 170, 173, .5);
+        background-color: rgb(70, 70, 70);
+        color: white;
+        transform: scale(.9);
+    }
+}
+
+@media screen and (max-width:578px) {
+    #course button {
+        margin-top: -25px;
+        padding: 5px 15px;
+        font-weight: 600;
+        font-size: 20px;
+        text-transform: uppercase;
+        background-color: black;
+        color: white;
+        border-radius: 15px;
+        transition: all .2s linear;
+    }
+
+    #course a:hover button {
+        border: 1px solid black;
+        background-color: white;
+        color: black;
+        transform: translateY(-10px);
+
+    }
+
+    #why button {
+        margin-top: -25px;
+        padding: 5px 10px;
+        font-weight: 600;
+        font-size: 20px;
+        text-transform: uppercase;
+        background-color: black;
+        color: white;
+        border-radius: 15px;
+        transition: all .2s linear;
+    }
+
+    #why a:hover button {
+        border: 1px solid black;
+        background-color: white;
+        color: black;
+        transform: translateY(-10px);
+    }
+
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}

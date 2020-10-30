@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* back to home  */
+.btn {
+    text-transform: uppercase;
+    padding: 4px 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border: none;
+    background-color: white !important;
+    color: black !important;
+    transition: all .3s linear;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.btn:hover a {
+    text-decoration: none;
+    color: red;
+}
+
+/* back to home  */
+.welcome {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-size: 90px;
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 5px;
+}
+
+
+ul li {
+    position: absolute;
+    border: 1px solid #fff;
+    width: 30px;
+    height: 30px;
+    list-style-type: none;
+    background-color: white;
+    opacity: 0;
+}
+
+#time {
+    font-size: 60px;
+    word-spacing: 10px;
+}
+
+
+.square li {
+    top: 50vh;
+    left: 45vw;
+    animation: square 10s linear infinite;
+}
+
+.square li:nth-child(2) {
+    top: 10vh;
+    left: 10vw;
+    animation-delay: 0s;
+}
+
+.square li:nth-child(3) {
+    top: 80vh;
+    left: 10vw;
+    animation-delay: 2s;
+}
+
+.square li:nth-child(4) {
+    top: 80vh;
+    left: 80vw;
+    animation-delay: 4s;
+}
+
+.square li:nth-child(5) {
+    top: 10vh;
+    left: 80vw;
+    animation-delay: 6s;
+
+}
+
+@keyframes square {
+    0% {
+        transform: scale(0) rotateY(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(5) rotateY(1000deg);
+        opacity: 0;
+    }
+}
+
+/* next circle */
+.circle li {
+    bottom: 0;
+    left: 15vw;
+    animation: circle 10s linear infinite;
+}
+
+.circle li:nth-child(2) {
+    left: 35vw;
+    animation-delay: 2s;
+}
+
+.circle li:nth-child(3) {
+    left: 55vw;
+    animation-delay: 6s;
+}
+
+.circle li:nth-child(4) {
+    left: 75vw;
+    animation-delay: 4s;
+}
+
+.circle li:nth-child(5) {
+    left: 90vw;
+    animation-delay: 8s;
+}
+
+@keyframes circle {
+    0% {
+        transform: scale(0) rotateY(0deg);
+        opacity: 1;
+        bottom: 0;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: scale(5) rotateY(1000deg);
+        opacity: 0;
+        bottom: 90vh;
+        border-radius: 50%;
+    }
+}

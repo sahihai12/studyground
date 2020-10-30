@@ -1,0 +1,17 @@
+.type h1{
+    overflow: hidden;
+    border-right: 1px solid red;
+    white-space: nowrap;
+    animation: type 1s steps(0, end) ,
+               blink 0.5s step-end infinite;
+    margin:  0 auto;
+}
+ @keyframes type{
+    from{width: 0;}
+    to{width: 100%;} 
+    }
+
+@keyframes blink{
+    from,to{border-color: transparent;}
+    50% {border-color: red;}
+}

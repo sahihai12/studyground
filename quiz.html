@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>quiz in Javascript </title>
+    <link rel="stylesheet" href="css/quiz.css">
+    <link rel="stylesheet" href="scss/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-xl ">
+            <a class="navbar-brand" href="index.php">
+                <i class="fa fa-home" aria-hidden="true"></i>Home
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto text-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="start.html">Course</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quiz.html">Quiz</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="quizContainer container-fluid well well-lg">
+        <div class="quiz-container">
+            <div class="question-number">
+                <h3>Question <span class="question-num-value"></span> of <span class="total-question"></span></h3>
+            </div>
+            <div class="question">
+
+            </div>
+            <div class="options">
+                <div id="1" class="option1" onclick="check(this)"></div>
+                <div id="2" class="option2" onclick="check(this)"></div>
+                <div id="3" class="option3" onclick="check(this)"></div>
+                <div id="4" class="option4" onclick="check(this)"></div>
+            </div>
+            <div class="button">
+                <button type="button" class="btn" onclick="next()">Next</button>
+            </div>
+            <div class="answers-tracker">
+
+            </div>
+        </div>
+
+        <div class="quiz-over">
+            <div class="box">
+                <h1>
+                    Good Try!<br>
+                    You Got <span class="correct-answers"></span> out of <span class="total-question2"></span> answers
+                    correct! <br>
+                    That's <span class="percentage"></span>
+                </h1>
+                <button type="button" onclick="tryAgain()">TryAgain</button>
+            </div>
+        </div>
+
+
+        <!-- script -->
+        <script src="js/custom.js"></script>
+</body>
+
+</html>
